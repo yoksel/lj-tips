@@ -1,0 +1,49 @@
+$base-size: 16px;
+$base-lh: 1.4;
+$font-headers: Georgia, serif;
+$link-color: steelblue;
+
+A {
+    color: $link-color;
+    &:visited {
+        color: lighten($link-color,20%);
+        }
+    }
+
+H1,
+H2,
+H3,
+H4,
+H5 {
+    z-index: 2;
+    font-family: $font-headers;
+    line-height: 1;
+    font-weight: normal;
+    }
+
+$map-headers: (H1: 2.7, H2: 2.4, H3: 2.3, H4: 1.7, H5: 1.2);
+
+@mixin headers {
+    @each $header in map-keys($map-headers) {
+        $header-fsize: $base-size * map-get($map-headers, $header);
+        #{$header} {
+            margin: 0 0 $header-fsize/1.5;
+            font-size: #{$header-fsize};
+            }
+    }
+}
+
+@include headers;
+
+CODE {
+    display: inline-block;
+    padding: 0 3px;
+    background: palegoldenrod;
+    border-radius: 3px;
+    vertical-align: middle;
+    text-shadow: 1px 1px white;
+    font-family: Consolas, Monaco, Lucida Console, monospace;
+    /*font-size: 12px;*/
+    /*line-height: 1.6;*/
+    color: darkred;
+    }

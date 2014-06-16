@@ -1,0 +1,165 @@
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME,
+H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE,
+A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE,
+DEL, DFN, IMG, INS, KBD, Q, S, SAMP,
+SMALL, STRIKE, SUB, SUP, TT, VAR,
+U, CENTER,
+DL, DT, DD, OL, UL, LI,
+FIELDSET, FORM, LABEL, LEGEND,
+TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD,
+ARTICLE, ASIDE, CANVAS, DETAILS, EMBED,
+FIGURE, FIGCAPTION, FOOTER, HEADER, HGROUP,
+MENU, NAV, OUTPUT, RUBY, SECTION, SUMMARY,
+TIME, MARK, AUDIO, VIDEO {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+BODY {
+  line-height: 1;
+}
+
+OL,
+UL {
+  list-style: none;
+}
+
+BLOCKQUOTE,
+Q {
+  quotes: none;
+}
+
+BLOCKQUOTE:before,
+BLOCKQUOTE:after,
+Q:before,
+Q:after {
+  content: '';
+  content: none;
+}
+
+TABLE {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+A {
+  color: steelblue;
+}
+A:visited {
+  color: #8db3d3;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5 {
+  z-index: 2;
+  font-family: Georgia, serif;
+  line-height: 1;
+  font-weight: normal;
+}
+
+H1 {
+  margin: 0 0 28.8px;
+  font-size: 43.2px;
+}
+
+H2 {
+  margin: 0 0 25.6px;
+  font-size: 38.4px;
+}
+
+H3 {
+  margin: 0 0 24.53333px;
+  font-size: 36.8px;
+}
+
+H4 {
+  margin: 0 0 18.13333px;
+  font-size: 27.2px;
+}
+
+H5 {
+  margin: 0 0 12.8px;
+  font-size: 19.2px;
+}
+
+CODE {
+  display: inline-block;
+  padding: 0 3px;
+  background: palegoldenrod;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-shadow: 1px 1px white;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  /*font-size: 12px;*/
+  /*line-height: 1.6;*/
+  color: darkred;
+}
+
+BODY {
+  padding: 4em 2em;
+  background: #EEE;
+  font: 16px/1.4 "Trebouchet MS", sans-serif;
+}
+
+IMG {
+  border: 1px solid #DDD;
+}
+
+FIGCAPTION + IMG,
+IMG + FIGCAPTION {
+  margin-top: 1em;
+}
+
+.l-wrapper {
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 0 0 1em -0.3em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1em -0.3em rgba(0, 0, 0, 0.3);
+  background-color: #FFF;
+}
+
+.l-header {
+  margin-bottom: 2em;
+}
+
+.list--ol {
+  counter-reset: num-list;
+}
+.list--ol .list__item {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 1.05em 0 0 3em;
+}
+.list--ol .list__item:before {
+  position: absolute;
+  counter-increment: num-list;
+  content: counter(num-list) ".";
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  font-family: Georgia, serif;
+}
+.list--ol .list__item IMG {
+  vertical-align: top;
+}
+
+.list__term {
+  font-weight: bold;
+}
+
+.list__desc {
+  margin: .5em 0 1.5em 1em;
+}
